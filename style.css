@@ -1,11 +1,18 @@
 body{
     background-color: beige;
+    font-family: Arial, sans-serif;
 }
 
 .title{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+.title{
+    text-align: center;
+    font-size: 3.5rem;
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
 }
 
 .pageUser {
@@ -83,4 +90,186 @@ body{
 
 .banniere{
     border-radius: 30px;
+}
+
+.userCard{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+
+    transition: all 0.3s ease;
+}
+
+.userCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 15px 10px 20px rgba(0,0,0,0.3);
+}
+
+.buttonProfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 75px;
+
+    border-radius: 20px;
+
+    background-color: #4CAF50;
+    color: white;
+
+    box-shadow: 3px 3px black;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.buttonProfil:hover{
+    transform: scale(1.05);
+    background-color: #45a049;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.3);
+}
+
+.buttonProfil:active{
+    transform: scale(0.98);
+}   
+
+.storiesImages{
+    border-radius: 250px;
+    width: 130px;
+
+    transition: all 0.3s ease;
+}
+
+.storiesImages:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+.postsCard{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 30px;
+
+    transition: all 0.3s ease;
+}
+
+.postsCard:hover{
+    transform: translateY(-5px);
+    box-shadow: 15px 15px 25px rgba(0,0,0,0.25);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    animation: apparition 1s ease;
+}
+
+@keyframes apparition{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.userCard,
+.postsCard,
+.StoriesCard{
+    animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-title{
+    font-size: 2rem;
+
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+
+    color: #2c3e50;
+
+    font-weight: 700;
+
+    position: relative;
+
+    letter-spacing: 1px;
+}
+
+.section-title::after{
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -12px;
+
+    width: 80px;
+    height: 5px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #4CAF50,
+        #66BB6A
+    );
+}
+
+.section-title{
+    font-size: 2.2rem;
+    color: #1f2937;
+
+    margin-left: 80px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+
+    font-weight: 800;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.section-title{
+    font-size: 2.2rem;
+    color: #1f2937;
+
+    margin-left: 80px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+
+    font-weight: 800;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
